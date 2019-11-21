@@ -4,7 +4,9 @@ permalink: index.html
 layout: home
 ---
 
-# Content Directory
+# AZ-203T00-A: Developing Solutions for Microsoft Azure
+
+## Content Directory
 
 Hyperlinks to each of the lab exercises and demos are listed below.
 
