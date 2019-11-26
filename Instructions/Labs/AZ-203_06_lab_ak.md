@@ -86,13 +86,15 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the storage account by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+1.  Select **Create** to create the storage account by using your specified configuration. 
+
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 1.  In the Azure portal's navigation pane, select **All services**.
 
 1.  On the **All services** blade, select **Storage Accounts**.
 
-1.  On the **Storage accounts** blade, select the storage account instance with the prefix **securestor**.
+1.  On the **Storage accounts** blade, select the storage account instance with the prefix "securestor".
 
 1.  On the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
 
@@ -132,7 +134,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the key vault by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+1.  Select **Create** to create the key vault by using your specified configuration. 
+
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 #### Task 4: Create an Azure Functions app
 
@@ -184,7 +188,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the function app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+1.  Select **Create** to create the function app by using your specified configuration. 
+
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 #### Review
 
@@ -210,7 +216,7 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     b.  In the confirmation dialog box, select **Yes**.
 
-1.  Wait for the system-assigned managed identity to be created before you move forward with this lab.
+    > **Note**: Wait for the system-assigned managed identity to be created before you move forward with this lab.
 
 #### Task 2: Create a Key Vault secret
 
@@ -238,7 +244,9 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     f.  Leave the **Set expiration date** text box set to its default value.
     
-    g.  In the **Enabled** section, select **Yes**, and then select **Create**. Wait for the secret to be created before you move forward with this lab.
+    g.  In the **Enabled** section, select **Yes**, and then select **Create**. 
+    
+    > **Note**: Wait for the secret to be created before you move forward with this lab.
 
 1.  Back in the Secrets pane, select the **storagecredentials** item in the list.
 
@@ -282,7 +290,9 @@ In this exercise, you created all the resources that you'll use for this lab.
     
     g.  Select **Add**.
 
-1.  Back in the Access policies pane, select **Save**. Wait for your changes to the access policies to save before you move forward with this lab.
+1.  Back in the Access policies pane, select **Save**. 
+
+    > **Note**: Wait for your changes to the access policies to save before you move forward with this lab.
 
 #### Review
 
@@ -316,7 +326,9 @@ In this exercise, you created a server-assigned managed service identity for you
 
     f.  Select **OK** to close the pop-up window and return to the **Configuration** section.
     
-    g.  Select **Save** on the blade to persist your settings. Wait for your application settings to persist before you move forward with the lab.
+    g.  Select **Save** on the blade to persist your settings.  
+
+    > **Note**: Wait for your application settings to persist before you move forward with the lab.
 
 #### Task 2: Create an HTTP-triggered function
 
@@ -450,7 +462,7 @@ In this exercise, you used a service identity to read the value of a secret stor
 
 1.  On the **Storage account** blade, select the **Containers** link in the **Blob service** section.
 
-1.  In the **Containers** section, select **Container**.
+1.  In the **Containers** section, select **+ Container**.
 
 1.  In the **New container** pop-up window, perform the following actions:
     
@@ -468,7 +480,9 @@ In this exercise, you used a service identity to read the value of a secret stor
     
     b.  In the **File Explorer** dialog box, go to **Allfiles (F):\\Allfiles\\Labs\\06\\Starter**, select the **records.json** file, and then select **Open**.
     
-    c.  Ensure that **Overwrite if files already exist** is selected, and then select **Upload**. Wait for the blob to upload before you continue with this lab.
+    c.  Ensure that **Overwrite if files already exist** is selected, and then select **Upload**.  
+
+    > **Note**: Wait for the blob to upload before you continue with this lab.
 
 1.  Back on the **Container** blade, select the **records.json** blob in the list of blobs.
 
@@ -666,15 +680,13 @@ In this exercise, you used C\# code to access a storage account, and then downlo
 
 1.  On the Azure portal's navigation pane, select the **Cloud Shell** icon to open a new shell instance.
 
-    > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
+    > **Note**: The **Cloud Shell** icon is represented by a greater than sign () and underscore character (\_).
 
 1.  If this is your first time opening Cloud Shell using your subscription, the  **Welcome to Azure Cloud Shell Wizard** will appear, which you can use to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    a.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
-    
-    b.  Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab.
+    a.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
-    > **Note**: If you don't notice Cloud Shell configuration options, this is most likely because you are using an existing subscription with this course's labs. The labs are written with the presumption that you are using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice Cloud Shell configuration options, this is most likely because you are using an existing subscription with this course's labs. The labs are written with the presumption that you are using a new subscription.
 
 1.  At the **Cloud Shell** command prompt in the portal, enter the following command, and then select Enter to list all resource groups in the subscription:
 
