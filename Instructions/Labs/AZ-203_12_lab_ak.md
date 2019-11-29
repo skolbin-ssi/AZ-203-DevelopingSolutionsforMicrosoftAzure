@@ -56,7 +56,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create an Application Insights resource
 
-1.  In the navigation pane of the portal, select **Create a resource**.
+1.  In the Azure portal's navigation pane, select **Create a resource**.
 
 1.  On the **New** blade, find the **Search the Marketplace** box.
 
@@ -72,15 +72,15 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Basics** tab, perform the following actions:
     
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    b.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
+    1.  In the **Resource group** section, select **Create new**, enter **MonitoredAssets**, and then select **OK**.
     
-    c.  In the **Name** text box, enter **instrm*yourname***.
+    1.  In the **Name** text box, enter **instrm*yourname***.
     
-    d.  In the **Location** drop-down list, select the **(US) East US** region.
+    1.  In the **Location** drop-down list, select the **(US) East US** region.
     
-    e.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
@@ -88,7 +88,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the navigation pane of the portal, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
@@ -100,7 +100,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Create an Azure Web Apps resource
 
-1.  In the navigation pane of the portal, select **Create a resource**.
+1.  In the Azure portal's navigation pane, select **Create a resource**.
 
 1.  On the **New** blade, find the **Search the Marketplace** box.
 
@@ -116,33 +116,33 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Basics** tab, perform the following actions:
     
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    b.  In the **Resource group** drop-down list, select **MonitoredAssets**.
+    1.  In the **Resource group** drop-down list, select **MonitoredAssets**.
     
-    c.  In the **Name** text box, enter **smpapi*yourname***.
+    1.  In the **Name** text box, enter **smpapi*yourname***.
 
-    d.  In the **Publish** section, select **Code**.
+    1.  In the **Publish** section, select **Code**.
 
-    e.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
-    f.  In the **Operating System** section, select **Windows**.
+    1.  In the **Operating System** section, select **Windows**.
 
-    g.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **East US** region.
 
-    h.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
+    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **MonitoredPlan** into the **Name** text box, and then select **OK**.
 
-    i.  Leave the **Sku and size** section set to its default value.
+    1.  Leave the **SKU and size** section set to its default value.
 
-    j.  Select **Next: Monitoring**.
+    1.  Select **Next: Monitoring**.
 
 1.  On the **Monitoring** tab, perform the following actions:
 
-    a.  In the **Enable Application Insights** section, select **Yes**.
+    1.  In the **Enable Application Insights** section, select **Yes**.
 
-    b.  In the **Application Insights** drop-down list, select the **instrm\*** Application Insights account that you created earlier in this lab.
+    1.  In the **Application Insights** drop-down list, select the **instrm\*** Application Insights account that you created earlier in this lab.
 
-    c.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
@@ -150,7 +150,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
-1.  In the navigation pane of the portal, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
@@ -160,11 +160,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Configuration** section, perform the following actions:
     
-    a.  Select the **Application settings** tab.
+    1.  Select the **Application settings** tab.
 
-    b.  Select **Show Values** to get the secrets associated with your API.
+    1.  Select **Show Values** to get the secrets associated with your API.
 
-    c.  Find the value corresponding to the **APPINSIGHTS\_INSTRUMENTATIONKEY** key. This value was set automatically when you built your Web Apps resource.
+    1.  Find the value corresponding to the **APPINSIGHTS\_INSTRUMENTATIONKEY** key. This value was set automatically when you built your Web Apps resource.
 
 1.  On the **App Service** blade, in the **Settings** category, select the **Properties** link.
 
@@ -176,23 +176,23 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Scale out** section, perform the following actions:
     
-    a.  Select **Custom autoscale**.
+    1.  Select **Custom autoscale**.
     
-    b.  In the **Autoscale setting name** box, enter **ComputeScaler**.
+    1.  In the **Autoscale setting name** box, enter **ComputeScaler**.
     
-    c.  In the **Resource group** list, select **MonitoredAssets**.
+    1.  In the **Resource group** list, select **MonitoredAssets**.
     
-    d.  In the **Scale mode** section, select **Scale based on a metric**.
+    1.  In the **Scale mode** section, select **Scale based on a metric**.
     
-    e.  In the **Minimum** box in the **Instance limits** section, enter **2**.
+    1.  In the **Minimum** box in the **Instance limits** section, enter **2**.
     
-    f.  In the **Maximum** box in the **Instance limits** section, enter **8**.
+    1.  In the **Maximum** box in the **Instance limits** section, enter **8**.
     
-    g.  In the **Default** box in the **Instance limits** section, enter **3**.
+    1.  In the **Default** box in the **Instance limits** section, enter **3**.
     
-    h.  Select **Add a rule**. In the **Scale rule** pop-up dialog, leave all boxes set to their default values, and then select **Add**.
+    1.  Select **Add a rule**. In the **Scale rule** pop-up dialog, leave all boxes set to their default values, and then select **Add**.
     
-    i.  Within the section, select **Save**. 
+    1.  Within the section, select **Save**. 
 
     > **Note**: Wait for the save operation to complete before you move forward with this lab.
 
@@ -208,7 +208,7 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the File Explorer pane that opens, go to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
 
 1.  In the **Visual Studio Code** window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
 
@@ -327,7 +327,7 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the File Explorer window that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\12\\Starter\\Api**, and then select **Select Folder**.
 
 1.  In the Visual Studio Code window, right-click the Explorer pane or activate the shortcut menu, and then select **Open in Terminal**.
 
@@ -339,9 +339,9 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  In the browser window, perform the following actions:
     
-    a.  Enter the email address for your Microsoft account, and then select **Next**.
+    1.  Enter the email address for your Microsoft account, and then select **Next**.
     
-    c.  Enter the password for your Microsoft account, and then select **Sign in**.
+    1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
 1.  Return to the currently open command prompt application.  
 
@@ -385,7 +385,7 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
 
-1.  In the navigation pane of the portal, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
@@ -403,7 +403,7 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
 
-1.  In the navigation pane of the portal, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **MonitoredAssets** resource group that you created earlier in this lab.
 
@@ -413,21 +413,21 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  On the **Application Insights** blade, perform the following actions:
 
-    a.  Ensure that the **Application Insights** section is set to **Enabled**.
+    1.  Ensure that the **Application Insights** section is set to **Enabled**.
 
-    b.  In the **Instrument your application** section, select the **.NET Core** tab.
+    1.  In the **Instrument your application** section, select the **.NET Core** tab.
 
-    c.  In the **Collection level** section, select **Recommended**.
+    1.  In the **Collection level** section, select **Recommended**.
 
-    d.  In the **Profiler** secton, select **On**.
+    1.  In the **Profiler** secton, select **On**.
 
-    e.  In the **Snapshot debugger** section, select **Off**.
+    1.  In the **Snapshot debugger** section, select **Off**.
 
-    f.  In the **SQL Commands** section, select **Off**.
+    1.  In the **SQL Commands** section, select **Off**.
 
-    g.  Select **Apply**.
+    1.  Select **Apply**.
 
-    h.  In the confirmation dialog, select **Yes**.
+    1.  In the confirmation dialog, select **Yes**.
 
 1.  Close the **Application Insights** blade.
 
@@ -485,7 +485,7 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 In this exercise, you deployed your web application to Azure App Service and monitored your metrics from the same Application Insights instance.
 
-### Exercise 4: Clean up subscription 
+### Exercise 4: Clean up your subscription 
 
 #### Task 1: Open Cloud Shell
 
@@ -495,7 +495,7 @@ In this exercise, you deployed your web application to Azure App Service and mon
 
 1.  If this is your first time opening Cloud Shell using your subscription, the **Welcome to Azure Cloud Shell Wizard** will appear, which allows you to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    a.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    1.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
     > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 

@@ -28,7 +28,7 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 > **Note**: Your instructor will provide lab VM sign-in instructions.
 
-#### Review installed applications
+#### Review the installed applications
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
     
@@ -70,23 +70,23 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  Select the **Basics** tab, and in the tab area, perform the following actions:
     
-    a.  Leave the **Subscription** box set to its default value.
+    1.  Leave the **Subscription** box set to its default value.
     
-    b.  In the **Resource group** section, select **Create new**, enter **ManagedPlatform**, and then select **OK**.
+    1.  In the **Resource group** section, select **Create new**, enter **ManagedPlatform**, and then select **OK**.
     
-    c.  In the **Storage account name** text box, enter **imgstor*yourname***.
+    1.  In the **Storage account name** text box, enter **imgstor*yourname***.
     
-    d.  In the **Location** list, select the **(US) East US** region.
+    1.  In the **Location** list, select the **(US) East US** region.
     
-    e.  In the **Performance** section, select **Standard**.
+    1.  In the **Performance** section, select **Standard**.
     
-    f.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
+    1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
     
-    g.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
+    1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
     
-    h.  In the **Access tier (default)** section, ensure that **Hot** is selected.
+    1.  In the **Access tier (default)** section, ensure that **Hot** is selected.
     
-    i.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you specified in the previous steps.
 
@@ -116,9 +116,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **New container** window, perform the following actions:
     
-    a.  In the **Name** text box, enter **images**.
+    1.  In the **Name** text box, enter **images**.
     
-    b.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
+    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **OK**.
 
 1.  In the **Containers** section, select the newly created **images** container.
 
@@ -126,15 +126,15 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	In the **Upload blob** window, perform the following actions:
 
-    a.  In the **Files** section, select the **Folder** icon.
+    1.  In the **Files** section, select the **Folder** icon.
 
-    b.  In the File Explorer dialog box, go to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **grilledcheese.jpg** file, and then select **Open**.
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **grilledcheese.jpg** file, and then select **Open**.
 
-    c.  Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**. Wait for the blob to upload before you continue with this lab.
+    1.  Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**. Wait for the blob to upload before you continue with this lab.
 
 #### Task 4: Create a web app
 
-1.  In the portal's navigation pane, select **Create a resource**.
+1.  In the Azure portal's navigation pane, select **Create a resource**.
 
 1.  On the **New** blade, find the **Search the Marketplace** box.
 
@@ -150,31 +150,31 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Basics** tab, perform the following actions:
     
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    b.  In the **Resource group** drop-down list, select **ManagedPlatform**.
+    1.  In the **Resource group** drop-down list, select **ManagedPlatform**.
     
-    c.  In the **Name** text box, enter **imgapi*yourname***.
+    1.  In the **Name** text box, enter **imgapi*yourname***.
 
-    d.  In the **Publish** section, select **Code**.
+    1.  In the **Publish** section, select **Code**.
 
-    e.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
-    f.  In the **Operating System** section, select **Windows**.
+    1.  In the **Operating System** section, select **Windows**.
 
-    g.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **East US** region.
 
-    h.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **ManagedPlan** in the **Name** text box, and then select **OK**.
+    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **ManagedPlan** in the **Name** text box, and then select **OK**.
 
-    i.  Leave the **Sku and size** section set to its default value.
+    1.  Leave the **SKU and size** section set to its default value.
 
-    j.  Select **Next: Monitoring**.
+    1.  Select **Next: Monitoring**.
 
 1.  On the **Monitoring** tab, perform the following actions:
 
-    a.  In the **Enable Application Insights** section, select **No**.
+    1.  In the **Enable Application Insights** section, select **No**.
 
-    b.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
@@ -182,7 +182,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 5: Configure the web app
 
-1.  In the portal's navigation pane, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
@@ -192,15 +192,15 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Configuration** section, perform the following actions:
     
-    a.  Select the **Application settings** tab, and then select **New application setting**.
+    1.  Select the **Application settings** tab, and then select **New application setting**.
     
-    c.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
+    1.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
     
-    d.  In the **Value** text box, enter the storage connection string that you copied earlier in this lab.
+    1.  In the **Value** text box, enter the storage connection string that you copied earlier in this lab.
     
-    e.  Leave the **Deployment slot setting** box set to its default value, and then select **OK** to close the pop-up dialog and return to the **Configuration** section.
+    1.  Leave the **Deployment slot setting** box set to its default value, and then select **OK** to close the pop-up dialog and return to the **Configuration** section.
     
-    g.  Select **Save** on the blade to persist your settings.
+    1.  Select **Save** on the blade to persist your settings.
   
     Wait for your application settings to persist before you move forward with the lab.
 
@@ -214,7 +214,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the File Explorer pane that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\API**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\API**, and then select **Select Folder**.
 
 1.  In the Explorer pane of the **Visual Studio Code** window, expand the **Controllers** folder, and then select the **ImagesController.cs** file to open the file in the editor.
 
@@ -312,29 +312,29 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  On the **Basics** tab, perform the following actions:
     
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    b.  In the **Resource group** drop-down list, select **ManagedPlatform**.
+    1.  In the **Resource group** drop-down list, select **ManagedPlatform**.
     
-    c.  In the **Name** text box, enter **imgweb*yourname***.
+    1.  In the **Name** text box, enter **imgweb*yourname***.
 
-    d.  In the **Publish** section, select **Code**.
+    1.  In the **Publish** section, select **Code**.
 
-    e.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
+    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.0 (current)**.
 
-    f.  In the **Operating System** section, select **Windows**.
+    1.  In the **Operating System** section, select **Windows**.
 
-    g.  In the **Region** drop-down list, select the **East US** region.
+    1.  In the **Region** drop-down list, select the **East US** region.
 
-    h.  In the **Windows Plan (East US)** section, select **ManagedPlan**.
+    1.  In the **Windows Plan (East US)** section, select **ManagedPlan**.
 
-    i.  Select **Next: Monitoring**.
+    1.  Select **Next: Monitoring**.
 
 1.  On the **Monitoring** tab, perform the following actions:
 
-    a.  In the **Enable Application Insights** section, select **No**.
+    1.  In the **Enable Application Insights** section, select **No**.
 
-    b.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
@@ -342,7 +342,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 #### Task 2: Configure a web app
 
-1.  In the portal's navigation pane, select **Resource groups**.
+1.  In the Azure portal's navigation pane, select **Resource groups**.
 
 1.  On the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
@@ -352,19 +352,19 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the **Configuration** section, perform the following actions:
     
-    a.  Select the **Application settings** tab, and then select **New application setting**.
+    1.  Select the **Application settings** tab, and then select **New application setting**.
     
-    c.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **ApiUrl**.
+    1.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **ApiUrl**.
     
-    d.  In the **Value** text box, enter the web app URL that you copied earlier in this lab.
+    1.  In the **Value** text box, enter the web app URL that you copied earlier in this lab.
 
         > **Note**: Make sure you include the protocol, such as **https://**, in the URL that you copy into the **Value** box for this application setting.
     
-    e.  Leave the **Deployment slot setting** box set to its default value.
+    1.  Leave the **Deployment slot setting** box set to its default value.
 
-    f.  Select **OK** to close the pop-up dialog, and then return to the **Configuration** section.
+    1.  Select **OK** to close the pop-up dialog, and then return to the **Configuration** section.
     
-    g.  Select **Save** on the blade to persist your settings.
+    1.  Select **Save** on the blade to persist your settings.
   
     Wait for your application settings to persist before you move forward with the lab.
 
@@ -374,7 +374,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  On the **File** menu, select **Open Folder**.
 
-1.  In the File Explorer pane that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Web**, and then select **Select Folder**.
+1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Web**, and then select **Select Folder**.
 
 1.  In the Explorer pane of the **Visual Studio Code** window, expand the **Pages** folder, and then select the **Index.cshtml.cs** file to open the file in the editor.
 
@@ -392,9 +392,9 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the browser window, perform the following actions:
     
-    a.  Enter the email address for your Microsoft account, and then select **Next**.
+    1.  Enter the email address for your Microsoft account, and then select **Next**.
     
-    c.  Enter the password for your Microsoft account, and then select **Sign in**.
+    1.  Enter the password for your Microsoft account, and then select **Sign in**.
 
 1.	Return to the currently open **Command Prompt** window. Wait for the sign-in process to finish.
 
@@ -432,7 +432,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
   
   	Wait for the deployment to complete before you move forward with this lab.
 
-1.	In the portal's navigation pane, select **Resource groups**.
+1.	In the Azure portal's navigation pane, select **Resource groups**.
 
 1.	On the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
@@ -444,11 +444,11 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.	On the **Contoso Photo Gallery** webpage, find the **Upload a new image** section, and then perform the following actions:
     
-    a.  Select **Browse**.
+    1.  Select **Browse**.
     
-    b.  In the File Explorer dialog box that opens, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **bahnmi.jpg** file, and then select **Open**.
+    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **bahnmi.jpg** file, and then select **Open**.
     
-    c.  Select **Upload**.
+    1.  Select **Upload**.
 
 1.	Observe that the list of gallery images has updated with your new image.
 
@@ -462,7 +462,7 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 In this exercise, you created an Azure web app and deployed an existing web application’s code to the resource in the cloud.
 
-### Exercise 3: Clean up subscription 
+### Exercise 3: Clean up your subscription 
 
 #### Task 1: Open Cloud Shell
 
@@ -472,9 +472,9 @@ In this exercise, you created an Azure web app and deployed an existing web appl
 
 1.  If this is your first time opening Cloud Shell using your subscription, the **Welcome to Azure Cloud Shell Wizard** will appear, which allows you to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    a.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
+    1.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**.
     
-    b.  Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab.
+    1.  Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab.
 
     > **Note**: If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 

@@ -28,7 +28,7 @@ Sign in to your Windows 10 virtual machine (VM) by using the following credentia
 
 > **Note**: Your instructor will provide lab VM sign-in instructions.
 
-#### Review installed applications
+#### Review the installed applications
 
 Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications you'll use in this lab:
     
@@ -52,7 +52,7 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 2: Create a resource group
 
-1.  On the portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
     > **Note**: If you can't find the **Create a resource** link, the **Create a resource** icon is a plus sign (+) character on the portal.
 
@@ -70,13 +70,13 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the **Basics** tab, perform the following actions:
     
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    b.  In the **Resource group** text box, enter the value **ContainerCompute**.
+    1.  In the **Resource group** text box, enter the value **ContainerCompute**.
     
-    c.  In the **Region** drop-down list, select the **(US) East US** location.
+    1.  In the **Region** drop-down list, select the **(US) East US** location.
     
-    d.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the options that you selected during the previous steps.
 
@@ -92,9 +92,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  If this is your first time opening Cloud Shell by using your subscription, the **Welcome to Azure Cloud Shell Wizard** will appear, which allows you to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    a.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
+    1.  A dialog box will appear that prompts you to create a new storage account to begin using the shell. Accept the default settings, and then select **Create storage**. 
 
-    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
+    > **Note**: Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab. If you don't notice the **Cloud Shell** configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
 1.  At the **Cloud Shell** command prompt in the portal, enter the following command, and then select Enter to get the version of the Azure CLI tool:
 
@@ -311,7 +311,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 3: Create a Container Registry resource
 
-1.  On the portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
 1.  On the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 
@@ -323,21 +323,21 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 1.  On the **Create container registry** blade, perform the following actions:
 
-    a.  In the **Registry name** text box, give your registry a globally unique name.
+    1.  In the **Registry name** text box, give your registry a globally unique name.
 
         >  **Note**: The blade will automatically check the name for uniqueness and inform you if you're required to choose a different name.
 
-    b.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
 
-    c.  In the **Resource group** drop-down list, select the existing **ContainerCompute** option.
+    1.  In the **Resource group** drop-down list, select the existing **ContainerCompute** option.
 
-    d.  In the **Location** text box, select **East US**.
+    1.  In the **Location** text box, select **East US**.
 
-    e.  In the **Admin user** section, select **Disable**.
+    1.  In the **Admin user** section, select **Disable**.
 
-    f.  In the **SKU** drop-down list, select **Basic**.
+    1.  In the **SKU** drop-down list, select **Basic**.
 
-    g.  Select **Create**.  
+    1.  Select **Create**.  
 
     > **Note**: Wait for the creation task to complete before moving forward with this lab.
 
@@ -397,7 +397,7 @@ In this exercise, you used Cloud Shell to create a VM as part of an automated sc
 
 #### Task 6: Validate your container image in Container Registry
 
-1.  On the portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -421,7 +421,7 @@ In this exercise, you created a .NET Core console application to display a machi
 
 #### Task 1: Enable the admin user in Container Registry
 
-1.  On the portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -447,31 +447,31 @@ In this exercise, you created a .NET Core console application to display a machi
 
 1.  On the **Create container instance** blade, perform the following actions:
     
-    a.  In the **Container name** text box, enter **managedcompute**.
+    1.  In the **Container name** text box, enter **managedcompute**.
     
-    b.  Leave the **Container image** text box set to its default value.
+    1.  Leave the **Container image** text box set to its default value.
     
-    c.  In the **OS type** section, select **Linux**.
+    1.  In the **OS type** section, select **Linux**.
     
-    d.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
     
-    e.  In the **Resource group** drop-down list, select **ContainerCompute**.
+    1.  In the **Resource group** drop-down list, select **ContainerCompute**.
     
-    f.  In the **Location** drop-down list, select **East US**.
+    1.  In the **Location** drop-down list, select **East US**.
     
-    g.  In the **Number of cores** drop-down list, select **2**.
+    1.  In the **Number of cores** drop-down list, select **2**.
     
-    h.  In the **Memory (GB)** text box, enter **4**.
+    1.  In the **Memory (GB)** text box, enter **4**.
     
-    i.  In the **Public IP address** section, select **No**.
+    1.  In the **Public IP address** section, select **No**.
     
-    j.  Select **OK**.
+    1.  Select **OK**.
 
     > **Note**: Wait for the creation task to complete before moving forward with this lab.
 
 #### Task 3: Manually deploy a container image to Container Instances
 
-1.  On the portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -481,15 +481,15 @@ In this exercise, you created a .NET Core console application to display a machi
 
 1.  In the **Access Keys** section, record the values for the following fields:
     
-    a.  **Login server**
+    1.  **Login server**
     
-    b.  **Username**
+    1.  **Username**
     
-    c.  **Password**
+    1.  **Password**
 
     > **Note**: You'll use these values later in this lab when you create another container instance.
 
-1.  On the portal's navigation pane, select the **Create a resource** link.
+1.  In the Azure portal's navigation pane, select the **Create a resource** link.
 
 1.  On the **New** blade, find the **Search the Marketplace** text box above the list of featured services.
 
@@ -505,61 +505,61 @@ In this exercise, you created a .NET Core console application to display a machi
 
 1.  On the **Basics** tab, perform the following actions:
 
-    a.  Leave the **Subscription** text box set to its default value.
+    1.  Leave the **Subscription** text box set to its default value.
 
-    b.  In the **Resource group** drop-down list, select **ContainerCompute**.
+    1.  In the **Resource group** drop-down list, select **ContainerCompute**.
     
-    c.  In the **Container name** text box, enter **manualcompute**.
+    1.  In the **Container name** text box, enter **manualcompute**.
 
-    d.  In the **Region** drop-down list, select **(US) East US**.
+    1.  In the **Region** drop-down list, select **(US) East US**.
     
-    e.  In the **Image type** section, select **Private**.
+    1.  In the **Image type** section, select **Private**.
     
-    f.  In the **Image name** text box, enter the **Login server** value that you recorded earlier, and then add the suffix **/ipcheck:latest**.
+    1.  In the **Image name** text box, enter the **Login server** value that you recorded earlier, and then add the suffix **/ipcheck:latest**.
 
         > **Note**: For example, if your **Login server** value is **azadmin.azurecr.io**, then your container image name would be **azadmin.azurecr.io/ipcheck:latest**
 
-    g.  In the **Image registry login server** text box, enter the **Login server** value that you recorded earlier in this lab.
+    1.  In the **Image registry login server** text box, enter the **Login server** value that you recorded earlier in this lab.
 
-    h.  In the **Image registry user name** text box, enter the **Username** value that you recorded earlier in this lab.
+    1.  In the **Image registry user name** text box, enter the **Username** value that you recorded earlier in this lab.
 
-    i.  In the **Image registry password** text box, enter the **Password** value that you recorded earlier in this lab.
+    1.  In the **Image registry password** text box, enter the **Password** value that you recorded earlier in this lab.
 
-    j.  In the **OS type** section, select **Linux**.
+    1.  In the **OS type** section, select **Linux**.
 
-    k.  In the **Size** section, select the **Change size** link.
+    1.  In the **Size** section, select the **Change size** link.
 
-    l.  On the **Change container size** blade, perform the following actions:
+    1.  On the **Change container size** blade, perform the following actions:
 
-        1.  In the **Number of CPU cores** textbox, enter **1**.
+        1.  In the **Number of CPU cores** text box, enter **1**.
 
-        1.  In the **Memory (GB)** textbox, enter **1.5**.
+        1.  In the **Memory (GB)** text box, enter **1.5**.
 
         1.  Leave the default value for the **GPU type** drop-down list.
 
         1.  Select **Ok**.
     
-    m.  Select **Next: Networking**.
+    1.  Select **Next: Networking**.
 
 1.  On the **Networking** tab, perform the following actions:
     
-    a.  In the **Include Public IP address** section, select **Yes**.
+    1.  In the **Include Public IP address** section, select **Yes**.
 
-    b.  Ensure that in the **Ports** section, the port is **80** and the port protocol is **TCP**.
+    1.  Ensure that in the **Ports** section, the port is **80** and the port protocol is **TCP**.
     
-    c.  Leave the **DNS name label** text box empty.
+    1.  Leave the **DNS name label** text box empty.
 
-    d.  Select **Next: Advanced**.
+    1.  Select **Next: Advanced**.
 
 1.  On the **Advanced** tab, perform the following actions:
     
-    a.  In the **Restart policy** drop-down list, select **On failure**.
+    1.  In the **Restart policy** drop-down list, select **On failure**.
     
-    b.  Leave the **Environment variable** text box empty.
+    1.  Leave the **Environment variable** text box empty.
     
-    c.  Leave the **Command override** text box empty.
+    1.  Leave the **Command override** text box empty.
 
-    d.  Select **Review + Create**.
+    1.  Select **Review + Create**.
 
 1.  On the **Review + Create** tab, review the selected options.
 
@@ -569,7 +569,7 @@ In this exercise, you created a .NET Core console application to display a machi
 
 #### Task 4: Validate that the container instance ran successfully
 
-1.  On the portal's navigation pane, select the **Resource groups** link.
+1.  In the Azure portal's navigation pane, select the **Resource groups** link.
 
 1.  On the **Resource groups** blade, find and then select the **ContainerCompute** resource group that you created earlier in this lab.
 
@@ -589,7 +589,7 @@ In this exercise, you created a .NET Core console application to display a machi
 
 In this exercise, you used multiple methods to deploy a container image to an Azure container instance. By using the manual method, you were also able to customize the deployment further and to run task-based applications as part of a container run.
 
-### Exercise 4: Clean up subscription 
+### Exercise 4: Clean up your subscription 
 
 #### Task 1: Open Cloud Shell and list resource groups
 
