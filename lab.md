@@ -16,7 +16,7 @@
 | Azure Storage Explorer | https://azure.microsoft.com/features/storage-explorer/ |
 | Azure Data Studio | https://docs.microsoft.com/en-us/sql/azure-data-studio/ |
 | Git for Windows | https://git-scm.com/download/win |
-| .NET Core 3.0 SDK | https://dotnet.microsoft.com/download |
+| .NET Core 3.1 SDK | https://dotnet.microsoft.com/download |
 | .NET Tool - HttpRepl | https://github.com/dotnet/HttpRepl |
 | Windows Terminal | https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701 |
 | Edge (Chromium) | https://www.microsoftedgeinsider.com/ |
