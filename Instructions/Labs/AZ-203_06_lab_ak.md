@@ -198,8 +198,6 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     
     1. Leave **Searchable** unselected.
 
-    1. Select **+ Add field**.
-
 1.  Within the **Add index** blade, perform the following actions to configure the new **name** field:
     
     1. Select **+ Add field**.
@@ -220,8 +218,6 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     
     1. In the **Analyzer** list, select **Standard - Lucene**.
 
-    1. Select **+ Add field**.
-
 1.  Within the **Add index** blade, perform the following actions to configure the new **price** field:
     
     1. Select **+ Add field**.
@@ -238,8 +234,6 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     
     1. Select **Facetable**.
 
-    1. Select **+ Add field**.
-
 1.  Within the **Add index** blade, perform the following actions to configure the new **quantity** field:
     
     1. Select **+ Add field**.
@@ -255,8 +249,6 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     1. Select **Sortable**.
     
     1. Select **Facetable**.
-
-    1. Select **+ Add field**.
 
 1. Within the **Add index** blade, perform the following actions to configure the new **manufacturer** field:
     
