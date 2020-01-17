@@ -97,8 +97,8 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     1.  In the **Name** field, enter **prodapi\[*your name in lowercase*\]**.
     
     1.  Leave the **Subscription** field set to its default value.
-    
-    1.  In the **Resource group** list, select **MultiTierService**.
+
+    1.  In the **Resource group** section, select **Create new**, in the pop-up field enter **MultiTierService**, and then select **OK**.
     
     1.  In the **Location** list, select **West US**.
     
@@ -133,8 +133,8 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 6.  In the **Basics** tab, perform the following actions:
     
     2.  Leave the **Subscription** field set to its default value.
-    
-    3.  In the **Resource group** section, select **Create new**, in the pop-up field enter **MultiTierService**, and then select **OK**.
+
+    3.  In the **Resource group** list, select **MultiTierService**.
     
     1.  In the **URL** field, enter the value **prodsearch\[*your name in lowercase*\]**.
     
