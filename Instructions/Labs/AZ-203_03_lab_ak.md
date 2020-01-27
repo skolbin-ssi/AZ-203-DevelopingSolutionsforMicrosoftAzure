@@ -477,7 +477,8 @@ In this exercise, you imported all of the resources you will use with your web a
     ```json
     "ConnectionStrings": {
         "AdventureWorksSqlContext": "",
-        ...
+        "AdventureWorksCosmosContext": "",
+        "AdventureWorksRedisContext": ""
     },
     ```
 
@@ -494,7 +495,8 @@ In this exercise, you imported all of the resources you will use with your web a
     ```json
     "Settings": {
         "BlobContainerUrl": "",
-        ...
+        "CartAvailable": false,
+        "UniqueIdentifier": "az:dev:student"
     }
     ```
 
@@ -1085,9 +1087,9 @@ In this exercise, you used Entity Framework and the .NET SDK for Azure Cosmos DB
 
     ```json
     "ConnectionStrings": {
-        ...
+        "AdventureWorksSqlContext": "<sql-connection-string>",
         "AdventureWorksCosmosContext": "",
-        ...
+        "AdventureWorksRedisContext": ""
     },
     ```
 
@@ -1381,7 +1383,8 @@ In this exercise, you wrote C# code to query an Azure Cosmos DB collection using
 
     ```powershell
     "ConnectionStrings": {
-        ...
+        "AdventureWorksSqlContext": "<sql-connection-string>",
+        "AdventureWorksCosmosContext": "<cosmos-connection-string>",
         "AdventureWorksRedisContext": ""
     },
     ```
@@ -1392,9 +1395,9 @@ In this exercise, you wrote C# code to query an Azure Cosmos DB collection using
 
     ```powershell
     "Settings": {
-        ...
+        "BlobContainerUrl": "<blob-container-base-uri>",
         "CartAvailable": false,
-        ...
+        "UniqueIdentifier": "az:dev:student"
     }
     ```
 
