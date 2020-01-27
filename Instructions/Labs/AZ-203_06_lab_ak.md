@@ -62,7 +62,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 1.  Close the currently running **Windows PowerShell** command prompt application.
 
-### Exercise 1: Creating an Azure Search service in the portal
+### Exercise 1: Creating an Azure Cognitive Search service in the portal
 
 #### Task 1: Open the Azure portal
 
@@ -280,9 +280,9 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 #### Review
 
-In this exercise, you created a new Azure Search account and built an index within the account.
+In this exercise, you created a new Azure Cognitive Search account and built an index within the account.
 
-### Exercise 2: Index an Azure Storage table in Azure Search
+### Exercise 2: Index an Azure Storage table in Azure Cognitive Search
 
 #### Task 1: Create an Azure Storage account
 
@@ -390,7 +390,7 @@ In this exercise, you created a new Azure Search account and built an index with
 
 1. Return to the browser window showing the **Azure portal**.
 
-#### Task 3: Create an Azure Search indexer
+#### Task 3: Create an Azure Cognitive Search indexer
 
 1.  In the left navigation pane of the portal, select **Resource groups**.
 
@@ -418,7 +418,7 @@ In this exercise, you created a new Azure Search account and built an index with
 
     1.  Select **Next: Add cognitive search (Optional)**.
 
-        > **Note**: Azure Search validates your settings at each step. It can take a few minutes to complete validation and move to the next tab in the list.
+        > **Note**: Azure Cognitive Search validates your settings at each step. It can take a few minutes to complete validation and move to the next tab in the list.
 
 1.  In the **Add cognitive search (optional)** tab, select **Skip to: Customize target index**.
 
@@ -494,7 +494,7 @@ In this exercise, you created a new Azure Search account and built an index with
 
 1. In the **Customize target index** tab, select **Next: Create an indexer**.
 
-    > **Note**: Azure Search validates your settings at each step. It can take a few minutes to complete validation and move to the next tab in the list.
+    > **Note**: Azure Cognitive Search validates your settings at each step. It can take a few minutes to complete validation and move to the next tab in the list.
 
 1. In the **Create an indexer** tab, perform the following actions:
 
@@ -576,7 +576,7 @@ In this exercise, you created a new Azure Search account and built an index with
 
 1. Close the **Search Explorer** blade.
 
-#### Task 5: Retrieve your Azure Search base URL
+#### Task 5: Retrieve your Azure Cognitive Search base URL
 
 1.  In the left navigation pane of the portal, select **Resource groups**.
 
@@ -588,7 +588,7 @@ In this exercise, you created a new Azure Search account and built an index with
 
 #### Review
 
-In this exercise, you created an Azure Storage account and indexed a Storage table within the account by using Azure Search. After the table was indexed, you were able to issue search queries against a copy of the entities in the Storage table.
+In this exercise, you created an Azure Storage account and indexed a Storage table within the account by using Azure Cognitive Search. After the table was indexed, you were able to issue search queries against a copy of the entities in the Storage table.
 
 ### Exercise 3: Build an API proxy tier by using Azure API Management
 
@@ -700,7 +700,7 @@ In this exercise, you created an Azure Storage account and indexed a Storage tab
 
 1. Observe the results of the API request.
 
-    > **Note**: Observe how there is a large amount of Azure Search metadata in the response. You might not want API users to know the implementation details that occur behind the scenes. In the next task, you will obfuscate much of this data.
+    > **Note**: Observe how there is a large amount of Azure Cognitive Search metadata in the response. You might not want API users to know the implementation details that occur behind the scenes. In the next task, you will obfuscate much of this data.
 
 1. Select the **Design** tab to return to the list of operations.
 
@@ -778,7 +778,7 @@ In this exercise, you created an Azure Storage account and indexed a Storage tab
 
 #### Review
 
-In this exercise, you built a proxy tier between your Azure Search account and any developers who wish to make search queries.
+In this exercise, you built a proxy tier between your Azure Cognitive Search account and any developers who wish to make search queries.
 
 ### Exercise 4: Create new table entities by using Azure Logic Apps
 
