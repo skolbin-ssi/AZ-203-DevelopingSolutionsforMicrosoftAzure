@@ -738,8 +738,8 @@ In this exercise, you created a console application to access your API by using 
 
 1.  In the **Metrics** section, perform the following actions:
 
-    1.  In the **Resource** section, select **Select a resource**.
-
+    1.  In the **Resource** section, select **Select a scope**.
+    
     1.  In the **Select a resource** window that appears, in the **Resource group** list, select **MonitoredAssets**. Then, in the **Resource** list, select the **instrm\*** Application Insights account option. Finally, select **Apply** to close the window and confirm your selection.
 
     1.  In the **Metric Namespace** list, in the **Standard** category, select **Standard metrics (preview)**.
