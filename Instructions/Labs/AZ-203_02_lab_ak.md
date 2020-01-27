@@ -510,7 +510,7 @@ In this exercise, you created an Azure Web App and deployed an existing web appl
 
     1.  Leave the **Subscription** text box set to its default value.
 
-    1.  In the **Resource group** section, **Use existing**, and then select **ManagedResourceGroup** from the list.
+    1.  In the **Resource group** section, **Use existing**, and then select **ManagedPlatform** from the list.
 
     1.  In the **Function app name** text box, enter **imgfunc\[your name in lowercase\]**.
 
