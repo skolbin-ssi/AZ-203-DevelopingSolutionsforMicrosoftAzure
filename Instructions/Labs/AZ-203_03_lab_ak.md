@@ -1333,7 +1333,7 @@ In this exercise, you wrote C# code to query an Azure Cosmos DB collection using
 
 1.  Within the **GetProductsInCartAsync** method, add the following lines of code to get the list from the database and parse the JSON value into a collection of **Product** instances:
 
-    ```
+    ```cs
     string json = await _database.StringGetAsync(uniqueIdentifier);
     List<Product> products = JsonConvert.DeserializeObject<List<Product>>(json ?? "[]");
     return products;
