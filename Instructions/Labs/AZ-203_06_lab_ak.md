@@ -112,7 +112,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 1.  Wait for the creation task to complete before you move forward with this lab.
 
-#### Task 3: Create an Azure Search account
+#### Task 3: Create an Azure Cognitive Search account
 
 1.  In the left navigation pane of the portal, select **+ Create a resource**.
 
@@ -122,9 +122,9 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 1.  In the search field, enter the text **Search** and press Enter.
 
-1.  In the **Everything** search results blade, select the **Azure Search** result.
+1.  In the **Everything** search results blade, select the **Azure Cognitive Search** result.
 
-1.  In the **Azure Search** blade, select **Create**.
+1.  In the **Azure Cognitive Search** blade, select **Create**.
 
 6.  In the **New Search Service** blade, observe the tabs at the top of the blade, such as **Basics**.
 
