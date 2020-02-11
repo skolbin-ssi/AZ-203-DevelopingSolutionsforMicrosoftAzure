@@ -196,7 +196,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** section, select **.NET Core 2.2**.
+    1.  In the **Runtime stack** section, select **.NET Core 2.1 (LTS)**.
 
     1.  In the **OS** section, select **Windows**.
 
@@ -360,7 +360,7 @@ In this exercise, you created a Web app in Azure and then deployed your ASP.NET 
 
     1.  In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** section, select **.NET Core 2.2**.
+    1.  In the **Runtime stack** section, select **.NET Core 2.1 (LTS)**.
 
     1.  In the **OS** section, select **Windows**.
 
