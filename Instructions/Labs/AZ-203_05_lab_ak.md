@@ -662,8 +662,6 @@ In this exercise, you created an API by using ASP.NET Core and configured it to 
 
 1.  In the **App Service** blade, select **Start** at the top of the blade to resume the Web App.
 
-1.  In the **Stop web app** confirmation dialog box, select **Yes**.
-
 1. Return to the currently running **Visual Studio Code** application.
 
 1. Observe that the application finally successfully invokes the Web App in Azure and returns the same JSON array that you observed earlier in this lab. Your result should resemble the following JSON content:
