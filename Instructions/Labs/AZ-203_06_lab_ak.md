@@ -614,8 +614,6 @@ In this exercise, you created an Azure Storage account and indexed a Storage tab
 
 1.  In the **API URL suffix** field, enter **search**.
 
-1.  In the **Products** field, select both **Starter** and **Unlimited**.
-
 1.  Select **Create.**
 
 1.  Wait for the new API to finish being created.
