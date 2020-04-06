@@ -590,13 +590,13 @@ In this exercise, you configured your ASP.NET Core web application to connect to
 
     > **Note**: The ``dotnet add package`` command will add the **[Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/2.2.6)** package from **NuGet**.
 
-1.  In the command prompt, enter the following command and press Enter to import version **3.0.0** of the **Microsoft.Azure.Cosmos** from NuGet:
+1.  In the command prompt, enter the following command and press Enter to import version **3.7.0** of the **Microsoft.Azure.Cosmos** from NuGet:
 
     ```powershell
-    dotnet add package Microsoft.Azure.Cosmos --version 3.0.0
+    dotnet add package Microsoft.Azure.Cosmos --version 3.7.0
     ```
 
-    > **Note**: The ``dotnet add package`` command will add the **[Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.0.0)** package from **NuGet**.
+    > **Note**: The ``dotnet add package`` command will add the **[Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.7.0)** package from **NuGet**.
 
 1.  In the command prompt, enter the following command and press Enter to build the .NET Core web application:
 
