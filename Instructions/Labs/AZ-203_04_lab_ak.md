@@ -21,17 +21,17 @@ Microsoft updates this training course as soon as the community brings needed ch
 #### Sign in to the lab virtual machine
 
 Sign in to your **Windows 10** virtual machine by using the following credentials:
-    
+
 -   **Username**: Admin
 
 -   **Password**: Pa55w.rd
 
-> **Note**: Lab virtual machine sign-in instructions will be provided to you by your instructor.
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
 
 #### Review installed applications
 
 Observe the taskbar located at the bottom of your **Windows 10** desktop. The taskbar contains the icons for the applications you will use in this lab:
-    
+
 -   Microsoft Edge
 
 -   File Explorer
@@ -42,19 +42,19 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 1.  In the PowerShell command prompt, change the current working directory to the **Allfiles (F):\\** path:
 
-    ```
+    ```powershell
     cd F:
     ```
 
 1.  Within the command prompt, enter the following command and press Enter to clone the **microsoftlearning/AZ-203-DevelopingSolutionsforMicrosoftAzure** project hosted on GitHub into the **Allfiles (F):\\** drive:
 
-    ```
+    ```powershell
     git clone --depth 1 --no-checkout https://github.com/microsoftlearning/AZ-203-DevelopingSolutionsForMicrosoftAzure .
     ```
 
 1.  Within the command prompt, enter the following command and press **Enter** to check out the lab files necessary to complete the **AZ-203T04** lab:
 
-    ```
+    ```powershell
     git checkout master -- Allfiles/*
     ```
 
@@ -93,23 +93,23 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
   > **Note**: Each tab represents a step in the workflow to create a new **storage account**. At any time, you can select **Review + create** to skip the remaining tabs.
 
 1.  In the **Basics** tab, perform the following actions:
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** section, select **Create new**, enter **SecureFunction**, and then select **OK**.
-    
+
     1.  In the **Storage account** **name** text box, enter **securestor\[your name in lowercase\]**.
-    
+
     1.  In the **Location** drop-down list, select the **(US) East US** region.
-    
+
     1.  In the **Performance** section, select **Standard**.
-    
+
     1.  In the **Account kind** drop-down list, select **StorageV2 (general purpose v2)**.
-    
+
     1.  In the **Replication** drop-down list, select **Locally-redundant storage (LRS)**.
-    
+
     1.  In the **Access tier** section, ensure that **Hot** is selected.
-    
+
     1.  Select **Review + Create**.
 
 1.  In the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -147,17 +147,17 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
   > **Note**: Each tab represents a step in the workflow to create a new **key vault**. At any time, you can select **Review + create** to skip the remaining tabs.
 
 1.  In the **Basics** tab, perform the following actions:
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** section, **Use existing**, and then select **SecureFunction** from the list.
-    
+
     1.  In the **Key vault name** text box, enter **securevault\[your name in lowercase\]**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
-        
+
     1.  In the **Pricing tier** drop-down list, select **Standard**.
-    
+
     1.  Select **Review + Create**.
 
 1.  In the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -183,11 +183,11 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
   > **Note**: Each tab represents a step in the workflow to create a new **function app**. At any time, you can select **Review + create** to skip the remaining tabs.
 
 1.  In the **Basics** tab, perform the following actions:
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** section, **Use existing**, and then select **SecureFunction** from the list.
-    
+
     1.  In the **Function app name** text box, enter **securefunc\[your name in lowercase\]**.
 
     1.  In the **Publish** section, select **Code**.
@@ -195,7 +195,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     1.  In the **Runtime stack** drop-down list, select **.NET Core**.
 
     1.  In the **Region** drop-down list, select the **East US** region.
-    
+
     1.  Select **Next: Hosting**.
 
 1.  In the **Hosting** tab, perform the following actions:
@@ -224,7 +224,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 In this exercise, you created all the resources that you will use for this lab.
 
-### Exercise 2: Configure secrets and identities 
+### Exercise 2: Configure secrets and identities
 
 #### Task 1: Configure a system-assigned managed service identity
 
@@ -239,11 +239,11 @@ In this exercise, you created all the resources that you will use for this lab.
 1.  In the **Platform features** tab, select the **Identity** link located in the **Networking** section.
 
 1.  In the **Identity** blade, locate the **System assigned** tab and then perform the following actions:
-    
+
     1.  In the **Status** section, select **On**.
-    
+
     1.  Select **Save**.
-    
+
     1.  Select **Yes** in the confirmation dialog.
 
 1.  Wait for the system-assigned managed identity to be created before you move forward with this lab.
@@ -261,21 +261,21 @@ In this exercise, you created all the resources that you will use for this lab.
 1.  In the **Secrets** pane, select **+ Generate/Import**.
 
 1.  In the **Create a secret** blade, perform the following actions:
-    
+
     1.  In the **Upload options** drop-down list, select **Manual**.
-    
+
     1.  In the **Name** text box, enter **storagecredentials**.
-    
+
     1.  In the **Value** text box, enter the storage account **Connection String** that you recorded earlier in this lab.
-    
+
     1.  Leave the **Content Type** text box set to its default value.
-    
+
     1.  Leave the **Set activation date** text box set to its default value.
-    
+
     1.  Leave the **Set expiration date** text box set to its default value.
-    
+
     1.  In the **Enabled** section, select **Yes**.
-    
+
     1.  Select **Create**.
 
 1.  Wait for the secret to be created before you move forward with this lab.
@@ -285,11 +285,11 @@ In this exercise, you created all the resources that you will use for this lab.
 1.  In the **Versions** pane, select the latest version of the **storagecredentials** secret.
 
 1. In the **Secret Version** pane, perform the following actions.
-    
+
     1.  Observe the metadata for the latest version of the secret.
-    
+
     1. Select **Show secret value** to view the value of the secret.
-    
+
     1. Record the value of the **Secret Identifier** text box because you will use this later in the lab.
 
       > **Note**: You are recording the value of the **Secret Identifier** field, not the **Secret Value** field.
@@ -307,19 +307,19 @@ In this exercise, you created all the resources that you will use for this lab.
 1.  In the **Access policies** pane, select **+ Add Access Policy**.
 
 1.  In the **Add access policy** blade, perform the following actions:
-    
+
     1.  Select the **Select principal** link.
-    
+
     1.  In the **Principal** blade, locate and select the service principal named **securefunc\[your name in lowercase\]**, and then select **Select**.
-    
+
     1.  Leave the **Key permissions** list set to its default value.
-    
+
     1.  In the **Secret permissions** drop-down list, select the **GET** permission.
-    
+
     1.  Leave the **Certificate permissions** list set to its default value.
-    
+
     1.  Leave the **Authorized application** text box set to its default value.
-    
+
     1.  Select **Add**.
 
 1.  Back in the **Access policies** pane, select **Save**.
@@ -330,9 +330,9 @@ In this exercise, you created all the resources that you will use for this lab.
 
 In this exercise, you created a server-assigned managed service identity for your function app and then gave that identity the appropriate permissions to get the value of a secret in your Key Vault. Finally, you created a secret that you will use within your function app.
 
-### Exercise 3: Write function app code 
+### Exercise 3: Write function app code
 
-#### Task 1: Create a Key Vault-derived application setting 
+#### Task 1: Create a Key Vault-derived application setting
 
 1.  On the navigation menu located on the left side of the portal, select the **Resource groups** link.
 
@@ -345,21 +345,21 @@ In this exercise, you created a server-assigned managed service identity for you
 1.  In the **Platform features** tab, select the **Configuration** link located in the **General Settings** section.
 
 1.  In the **Configuration** section, perform the following actions:
-    
+
     1.  Select the **Application settings** tab.
-    
+
     1.  Select **+ New application setting**.
-    
+
     1.  In the **Add/Edit application setting** popup that appears, in the **Name** field, enter **StorageConnectionString**.
-    
+
     1.  In the **Value** field, construct a value by using the following syntax: **@Microsoft.KeyVault(SecretUri=\<Secret Identifier\>)**
 
       > **Note**: You will need to build a reference to your **Secret Identifier** by using the above syntax. For example, if your Secret Identifier is **https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf**, then your value would be **@Microsoft.KeyVault(SecretUri=https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf)**
-    
+
     1.  Leave the **deployment slot setting** field set to its default value.
 
     1.  Select **OK** to close the popup and return to the **Configuration** section.
-    
+
     1.  Select **Save** at the top of the blade to persist your settings.
 
 1.  Wait for your application settings to persist before you move forward with the lab.
@@ -375,26 +375,26 @@ In this exercise, you created a server-assigned managed service identity for you
 1.  In the **Function App** blade, click **+** next to the **Functions** drop-down.
 
 1.  In the **New Azure Function** quickstart, perform the following actions:
-    
+
     1.  Under the **Choose a Development Environment** header, select **In-Portal**.
-    
+
     1.  Select **Continue**.
-    
+
     1.  Under the **Choose a Function** header, select **More templates…**.
-    
+
     1.  Select **Finish and view templates**.
-    
+
     1.  In the list of templates, select **HTTP trigger**.
-    
+
     1.  In the **New Function** pop-up, locate the **Name** text box and enter **FileParser**.
-    
+
     1.  In the **New Function** pop-up, locate the **Authorization level** list and select **Anonymous**.
-    
+
     1.  In the **New Function** pop-up, select **Create**.
 
 1.  In the function editor, observe the example function script:
 
-    ```
+    ```cs
     #r "Newtonsoft.Json"
 
     using System.Net;
@@ -425,7 +425,7 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  Within the function editor, copy and paste the following placeholder function:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
 
@@ -447,7 +447,7 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  The **Run** method should now look like this:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
 
@@ -459,19 +459,19 @@ In this exercise, you created a server-assigned managed service identity for you
 
 1.  Add the following line of code to get the value of the **StorageConnectionString** application setting by using the **Environment.GetEnvironmentVariable** method:
 
-    ```
+    ```cs
     string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
     ```
 
 1.  Add the following line of code to return the value of the **connectionString** variable by using the **OkObjectResult** class constructor:
-   
-    ```
+
+    ```cs
     return new OkObjectResult(connectionString);
     ```
-    
+
 1.  The **Run** method should now look like this:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
 
@@ -505,11 +505,11 @@ In this exercise, you securely used a service identity to read the value of a se
 1.  In the **Containers** section, select **+ Container**.
 
 1.  In the **New container** pop-up, perform the following actions:
-    
+
     1.  In the **Name** text box, enter **drop**.
-    
+
     1.  In the **Public access level** drop-down list, select **Blob (anonymous read access for blobs only)**.
-    
+
     1.  Select **OK**.
 
 1.  Back in the **Containers** section, select the newly created **drop** container.
@@ -517,13 +517,13 @@ In this exercise, you securely used a service identity to read the value of a se
 1.  In the **Container** blade, select **Upload**.
 
 1.  In the **Upload blob** pop-up, perform the following actions:
-    
+
     1.  In the **Files** section, select the **Folder** icon.
-    
+
     1.  In the File Explorer dialog box, go to **Allfiles (F):\\Allfiles\\Labs\\04\\Starter**, select the **records.json** file, and then select **Open**.
-    
+
     1.  Ensure that **Overwrite if files already exist** is selected.
-    
+
     1.  Select **Upload**.
 
 1. Wait for the blob to be uploaded before you continue with this lab.
@@ -547,9 +547,9 @@ In this exercise, you securely used a service identity to read the value of a se
 1. Back in the **Container** blade, select **Change access level policy** located at the top of the blade.
 
 1. In the **Change access level** pop-up that appears, perform the following actions:
-    
+
     1.  In the **Public access level** drop-down list, select **Private (no anonymous access)**.
-    
+
     1.  Select **OK**.
 
 1. On the taskbar, right-select the **Microsoft Edge** icon and then select **New window**.
@@ -580,7 +580,7 @@ In this exercise, you securely used a service identity to read the value of a se
 
 1.  In the file editor, insert this configuration content:
 
-    ```
+    ```xml
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <TargetFramework>netstandard2.0</TargetFramework>
@@ -605,25 +605,25 @@ In this exercise, you securely used a service identity to read the value of a se
 
 1.  At the top of the code file, add the following line of code to create a **using** directive for the **Azure.Storage** namespace:
 
-    ```
+    ```cs
     using Azure.Storage;
     ```
 
 1.  At the top of the code file, add the following line of code to create a **using** directive for the **Azure.Storage.Blobs** namespace:
 
-    ```
+    ```cs
     using Azure.Storage.Blobs;
     ```
 
 1.  Add the following line of code to create a **using** directive for the **Azure.Storage.Blobs.Models** namespace:
 
-    ```
+    ```cs
     using Azure.Storage.Blobs.Models;
     ```
 
 1.  The **Run** method should now look like this:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
     using Azure.Storage;
@@ -640,31 +640,31 @@ In this exercise, you securely used a service identity to read the value of a se
 
 1.  Add the following line of code within the **Run** method to get the value of the **StorageConnectionString** application setting by using the **Environment.GetEnvironmentVariable** method:
 
-    ```
+    ```cs
     string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
     ```
 
 1.  Add the following line of code to create a new instance of the **BlobServiceClient** class by passing in your *connectionString* variable to the constructor:
 
-    ```
+    ```cs
     BlobServiceClient serviceClient = new BlobServiceClient(connectionString);
     ```
 
 1.  Add the following line of code to use the **BlobServiceClient.GetBlobContainerClient** method, while passing in the **drop** container name to create a new instance of the **BlobContainerClient** class that references the container that you created earlier in this lab:
 
-    ```
+    ```cs
     BlobContainerClient containerClient = serviceClient.GetBlobContainerClient("drop");
     ```
 
 1.  Add the following line of code to use the **BlobContainerClient.GetBlobClient** method, while passing in the **records.json** blob name to create a new instance of the **BlobClient** class that references the blob that you uploaded earlier in this lab:
 
-    ```
+    ```cs
     BlobClient blobClient = containerClient.GetBlobClient("records.json");
     ```
-    
+
 1.  The **Run** method should now look like this:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
     using Azure.Storage;
@@ -684,19 +684,19 @@ In this exercise, you securely used a service identity to read the value of a se
 
 1.  Add the following line of code to use the **BlobClient.DownloadAsync** method to download the contents of the referenced blob asynchronously and store the result in a variable named *response*:
 
-    ```
+    ```cs
     var response = await blobClient.DownloadAsync();
     ```
 
 1.  Add the following line of code to return the various content stored in the *content* variable by using the **FileStreamResult** class constructor:
 
-    ```
+    ```cs
     return new FileStreamResult(response?.Value?.Content, response?.Value?.ContentType);
     ```
 
 1.  The **Run** method should now look like this:
 
-    ```
+    ```cs
     using System.Net;
     using Microsoft.AspNetCore.Mvc;
     using Azure.Storage;
@@ -722,7 +722,7 @@ In this exercise, you securely used a service identity to read the value of a se
 
 In this exercise, you used C\# code to access a Storage Account securely and then download the contents of a blob.
 
-### Exercise 5: Clean up subscription 
+### Exercise 5: Clean up subscription
 
 #### Task 1: Open Azure Cloud Shell and list resource groups
 
@@ -731,22 +731,22 @@ In this exercise, you used C\# code to access a Storage Account securely and the
     > **Note**: The **Cloud Shell** icon is represented by a greater than symbol and underscore character.
 
 1.  If this is your first time opening the **Cloud Shell** by using your subscription, a **Welcome to Azure Cloud Shell Wizard** will appear that allows you to configure **Cloud Shell** for first-time usage. Perform the following actions in the wizard:
-    
+
     1.  A dialog box will appear that prompts you to create a new Storage Account to begin using the shell. Accept the default settings and select **Create storage**.
-    
+
     1.  Wait for the **Cloud Shell** to finish its first-time setup procedures before moving forward with the lab.
 
     > **Note**: If you do not see the configuration options for the **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. The labs are written from the presumption that you are using a new subscription.
 
 1.  In the **Cloud Shell** command prompt at the bottom of the portal, type in the following command and press Enter to list all resource groups in the subscription:
 
-    ```
+    ```powershell
     az group list
     ```
 
 1.  In the prompt, type the following command and press Enter to view a list of possible commands to delete a resource group:
 
-    ```
+    ```powershell
     az group delete --help
     ```
 
@@ -754,10 +754,10 @@ In this exercise, you used C\# code to access a Storage Account securely and the
 
 1.  In the prompt, type the following command and press Enter to delete the **SecureFunction** resource group:
 
-    ```
+    ```powershell
     az group delete --name SecureFunction --no-wait --yes
     ```
-    
+
 1.  Close the **Cloud Shell** pane at the bottom of the portal.
 
 #### Task 3: Close active application

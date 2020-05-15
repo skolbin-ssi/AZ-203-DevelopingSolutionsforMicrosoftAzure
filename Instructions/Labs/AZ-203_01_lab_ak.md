@@ -21,17 +21,17 @@ Microsoft updates this training course as soon as the community brings needed ch
 #### Sign in to the lab virtual machine
 
 Sign in to your **Windows 10** virtual machine using the following credentials:
-    
+
 -   **Username**: Admin
 
 -   **Password**: Pa55w.rd
 
-> **Note**: Lab virtual machine sign in instructions will be provided to you by your instructor.
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
 
 #### Review installed applications
 
 Observe the taskbar located at the bottom of your **Windows 10** desktop. The taskbar contains the icons for the applications you will use in this lab:
-    
+
 -   Microsoft Edge
 
 -   File Explorer
@@ -73,13 +73,13 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     > **Note**: Each tab represents a step in the workflow to create a new **resource group**. At any time, you can select **Review + create** to skip the remaining tabs.
 
 1.  On the **Basics** tab, perform the following actions:
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** text box, enter the value **ContainerCompute**.
-    
+
     1.  In the **Region** drop-down list, select the **(US) East US** location.
-    
+
     1.  Select **Review +** **Create**.
 
 1.  In the **Review + Create** tab, review the options that you selected during the previous steps.
@@ -105,19 +105,19 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     > **Note**: Each tab represents a step in the workflow to create a new **virtual machine**. At any time, you can select **Review + create** to skip the remaining tabs.
 
 1.  In the **Basics** tab, perform the following actions:
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** drop-down list, select the existing **ContainerCompute** option.
 
     1.  In the **Virtual machine name** text box, enter **simplevm**.
-    
+
     1.  In the **Region** drop-down list, select the **(US) East US** location.
 
     1. In the **Availability options** drop-down list, ensure **No infrastructure redundancy required** is selected.
-    
+
     1.  In the **Image** text box, make sure that the **Ubuntu Server 18.04 LTS** option is selected.
-    
+
     1.  In the **Size** text box, select the **Change size** link.
 
 1.  In the **Select a VM size** blade, perform the following actions:
@@ -165,11 +165,11 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 1.  In the **Virtual Machine** blade, select **Connect**.
 
 1.  In the **Connect to virtual machine** pop-up that appears, perform the following actions:
-    
+
     1.  In the **IP address** text box, select **Public IP address**.
-    
+
     2.  In the **Port number** text box, enter **22**.
-    
+
     3.  **Copy** the text in the **Login using VM local account** text box.
 
         > **Note**: The command that you copied will connect to the VM by using SSH from a remote computer. You will use this command later in the lab.
@@ -179,9 +179,9 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
     > **Note**: The **Cloud Shell** icon is represented by a greater than symbol and underscore character.
 
 1.  If this is your first time opening the **Cloud Shell** by using your subscription, a **Welcome to Azure Cloud Shell Wizard** will appear that allows you to configure **Cloud Shell** for first-time usage. Perform the following actions in the wizard:
-    
+
     1.  A dialog box will appear that prompts you to create a new Storage Account to begin using the shell. Accept the default settings and select **Create storage**.
-    
+
     1.  Wait for the **Cloud Shell** to finish its first-time setup procedures before moving forward with the lab.
 
     > **Note**: If you do not see the configuration options for the **Cloud Shell**, this is most likely because you are using an existing subscription with this course's labs. The labs are written from the presumption that you are using a new subscription.
@@ -198,13 +198,13 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 1. After you are connected to the VM by using SSH, you will see a prompt for the Bash shell in the VM. In the prompt, type in the following command and press Enter to view the computer name of the Linux VM:
 
-    ```
+    ```bash
     uname -mnipo
     ```
 
 12. In the prompt, type in the following command and press Enter to view information about the distribution and operating system of the Linux VM.
 
-    ```
+    ```bash
     uname -srv
     ```
 
@@ -214,7 +214,7 @@ Observe the taskbar located at the bottom of your **Windows 10** desktop. The ta
 
 In this exercise, you created a new VM manually by using the Azure portal interface and connected to the VM by using the Cloud Shell and SSH.
 
-### Exercise 2: Create a virtual machine by using Azure CLI 
+### Exercise 2: Create a virtual machine by using Azure CLI
 
 #### Task 1: Open Cloud Shell
 
@@ -224,7 +224,7 @@ In this exercise, you created a new VM manually by using the Azure portal interf
 
 1.  In the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press Enter to view the version of the Azure CLI tool:
 
-    ```
+    ```bash
     az --version
     ```
 
@@ -232,35 +232,35 @@ In this exercise, you created a new VM manually by using the Azure portal interf
 
 1.  Type the following command and press Enter to view a list of subgroups and commands at the root level of the CLI:
 
-    ```
+    ```bash
     az --help
     ```
 
 1.  Type the following command and press Enter to view a list of subgroups and commands for **virtual machines**:
 
-    ```
+    ```bash
     az vm --help
     ```
 
 1.  Type the following command and press Enter to view a list of arguments and examples for the **Create Virtual Machine** command:
 
-    ```
+    ```bash
     az vm create --help
     ```
 
 1.  Type the following command and press Enter to create a new **virtual machine** with the following settings:
-    
+
       - **Resource group**: ContainerCompute
-    
+
       - **Name**: quickvm
-    
+
       - **Image**: Debian
-    
+
       - **Username**: Student
-    
+
       - **Password**: StudentPa55w.rd
 
-    ```
+    ```bash
     az vm create --resource-group ContainerCompute --name quickvm --image Debian --admin-username student --admin-password StudentPa55w.rd
     ```
 
@@ -270,37 +270,37 @@ In this exercise, you created a new VM manually by using the Azure portal interf
 
 1.  Type the following command and press Enter to view a more detailed JSON file that contains various metadata about the newly created VM:
 
-    ```
+    ```bash
     az vm show --resource-group ContainerCompute --name quickvm
     ```
 
 1.  Type the following command and press Enter to list all the IP addresses associated with the VM:
 
-    ```
+    ```bash
     az vm list-ip-addresses --resource-group ContainerCompute --name quickvm
     ```
 
 1.  Type the following command and press Enter to filter the output to only return the first IP address value:
 
-    ```
+    ```bash
     az vm list-ip-addresses --resource-group ContainerCompute --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv
     ```
 
 1.  Type the following command and press Enter to store the results of the previous command in a new Bash shell variable named *ipAddress*:
 
-    ```
+    ```bash
     ipAddress=$(az vm list-ip-addresses --resource-group ContainerCompute --name quickvm --query '[].{ip:virtualMachine.network.publicIpAddresses[0].ipAddress}' --output tsv)
     ```
 
 1. Type the following command and press Enter to print the value of the Bash shell variable *ipAddress*:
 
-    ```
+    ```bash
     echo $ipAddress
     ```
 
 1. Type the following command and press Enter to connect to the VM that you created earlier in this lab by using the SSH tool and the IP address stored in the Bash shell variable *ipAddress*:
 
-    ```
+    ```bash
     ssh student@$ipAddress
     ```
 
@@ -310,7 +310,7 @@ In this exercise, you created a new VM manually by using the Azure portal interf
 
 1. After you connect to the VM using SSH, type the following command and press Enter to view metadata describing the Linux VM:
 
-    ```
+    ```bash
     uname -a
     ```
 
@@ -330,37 +330,37 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 1.  In the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press **Enter** to move from the root directory to the **\~/clouddrive** directory:
 
-    ```
+    ```bash
     cd ~/clouddrive
     ```
 
 1.  Type the following command and press Enter to create a new directory named **ipcheck** within the **\~/clouddrive** directory:
 
-    ```
+    ```bash
     mkdir ipcheck
     ```
 
 1.  Type the following command and press Enter to change the active directory from **\~/clouddrive** to **\~/clouddrive/ipcheck**:
 
-    ```
+    ```bash
     cd ~/clouddrive/ipcheck
     ```
 
 1.  Type the following command and press Enter to create a new .NET Core console application in the current directory:
 
-    ```
+    ```bash
     dotnet new console --output . --name ipcheck
     ```
 
 1.  Type the following command and press Enter to create a new file in the **\~/clouddrive/ipcheck** directory named **Dockerfile**:
 
-    ```
+    ```bash
     touch Dockerfile
     ```
 
 1.  Type the following command and press Enter to open the embedded graphical editor in the context of the current directory:
 
-    ```
+    ```bash
     code .
     ```
 
@@ -372,11 +372,11 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 1.  Copy and paste the following code into the **Program.cs** file:
 
-    ```
+    ```cs
     public class Program
     {
         public static void Main(string[] args)
-        {        
+        {
             if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
             {
                 System.Console.WriteLine("Current IP Addresses:");
@@ -399,7 +399,7 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 1.  Back in the command prompt, type the following command and press Enter to execute the application:
 
-    ```
+    ```bash
     dotnet run
     ```
 
@@ -409,7 +409,7 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 8.  Copy and paste the following code into the **Dockerfile** file:
 
-    ```
+    ```dockerfile
     FROM mcr.microsoft.com/dotnet/core/sdk:2.2-alpine AS build
     WORKDIR /app
 
@@ -471,25 +471,25 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 1.  In the **Cloud Shell** command prompt at the bottom of the portal, type the following command and press Enter to view a list of all container registries in your subscription:
 
-    ```
+    ```bash
     az acr list
     ```
 
 1.  Type the following command and press Enter:
 
-    ```
+    ```bash
     az acr list --query "max_by([], &creationDate).name" --output tsv
     ```
 
 1.  Type the following command and press Enter:
 
-    ```
+    ```bash
     acrName=$(az acr list --query "max_by([], &creationDate).name" --output tsv)
     ```
 
 1.  Type the following command and press Enter:
 
-    ```
+    ```bash
     echo $acrName
     ```
 
@@ -497,19 +497,19 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 1.  Type the following command and press Enter to change the active directory from **\~/** to **\~/clouddrive/ipcheck**:
 
-    ```
+    ```bash
     cd ~/clouddrive/ipcheck
     ```
 
 1.  Type the following command and press Enter to view the contents of the current directory:
 
-    ```
+    ```bash
     dir
     ```
 
 1.  Type the following command and press Enter to upload the source code to your **Container Registry** and build the container image as an **Azure Container Registry Task**:
 
-    ```
+    ```bash
     az acr build --registry $acrName --image ipcheck:latest .
     ```
 
@@ -539,7 +539,7 @@ In this exercise, you used the Azure Cloud Shell to create a VM as part of an au
 
 In this exercise, you created a .NET Core console application to display a machine’s current IP address. You then added the Dockerfile file to the application so that it could be converted into a Docker container image. Finally, you deployed the container image to Azure Container Registry.
 
-### Exercise 4: Deploy an Azure container instance 
+### Exercise 4: Deploy an Azure container instance
 
 #### Task 1: Enable Admin User in Azure Container Registry
 
@@ -552,11 +552,11 @@ In this exercise, you created a .NET Core console application to display a machi
 1.  In the **Container Registry** blade, select **Update** from the top of the blade.
 
 1.  In the **Update container registry** blade, perform the following actions:
-    
+
     1.  In the **Admin user** section, select **Enable**.
-    
+
     1.  Select **Save**.
-    
+
 1.  Close the **Update container registry** blade.
 
 #### Task 2: Deploy a container image automatically to an Azure Container instance
@@ -570,25 +570,25 @@ In this exercise, you created a .NET Core console application to display a machi
 1.  In the pop-up menu that appears, select the **Run instance** link.
 
 1.  In the **Create container instance** blade that appears, perform the following actions:
-    
+
     1.  In the **Container name** text boxtext box, enter **managedcompute**.
-    
+
     1.  Leave the **Container image** text box set to its default value.
-    
+
     1.  In the **OS type** section, select **Linux**.
-    
+
     1.  Leave the **Subscription** text box set to its default value.
-    
+
     1.  In the **Resource group** drop-down list, select **ContainerCompute**.
-    
+
     1.  In the **Location** drop-down list, select **East US**.
-    
+
     1.  In the **Number of cores** drop-down list, select **2**.
-    
+
     1.  In the **Memory (GB)** text box, enter **4**.
-    
+
     1.  In the **Public IP address** section, select **No**.
-    
+
     1. Select **OK**.
 
 1.  Wait for the creation task to complete before moving forward with this lab.
@@ -604,11 +604,11 @@ In this exercise, you created a .NET Core console application to display a machi
 1.  In the **Container Registry** blade, locate the **Settings** section and select the **Access keys** link.
 
 1.  In the **Access Keys** section, record the values for the following fields:
-    
+
     1.  **Login server**
-    
+
     1.  **Username**
-    
+
     1.  **Password**
 
         > **Note**: You will use these values later in this lab when you create another **container instance**.
@@ -632,13 +632,13 @@ In this exercise, you created a .NET Core console application to display a machi
     1. Leave the **Subscription** text box set to its default value.
 
     1. In the **Resource group** drop-down list, select **ContainerCompute**.
-    
+
     1.  In the **Container name** text box, enter **manualcompute**.
 
     1. In the **Region** drop-down list, select **(US) East US**.
-    
+
     1.  In the **Image type** section, select **Private**.
-    
+
     1.  In the **Image name** text box, enter the **Login server** value that you recorded earlier and then add the suffix /**ipcheck:latest**.
 
         > **Note**: For example, if your **Login server** value is **azadmin.azurecr.io**, then your container image name would be **azadmin.azurecr.io/ipcheck:latest**
@@ -662,25 +662,25 @@ In this exercise, you created a .NET Core console application to display a machi
         1. Leave the default value for the **GPU type** drop-down list.
 
         1. Select **Ok**.
-    
+
     1. Select **Next: Networking**
 
 1. In the **Networking** tab, perform the following actions:
-    
+
     1. In the **Include Public IP address** section, select **Yes**.
 
     1. Ensure in the **Ports** section, the port **80** is there, with the port protocol **TCP**.
-    
+
     1. Leave the **DNS name label** text box empty.
 
     1. Select **Next: Advanced**.
 
 1. In the **Advanced** tab, perform the following actions:
-    
+
     1. In the **Restart policy** drop-down list, select **On failure**.
-    
+
     1. Leave the **Environment variable** text box empty.
-    
+
     1. Leave the **Command override** text box empty.
 
     1. Select **Review + create**.
@@ -712,7 +712,7 @@ In this exercise, you created a .NET Core console application to display a machi
 
 In this exercise, you used multiple methods to deploy a container image to an Azure container instance. By using the manual method, you were also able to customize the deployment further and execute task-based applications as part of a container run.
 
-### Exercise 5: Clean up subscription 
+### Exercise 5: Clean up subscription
 
 #### Task 1: Open Cloud Shell and list resource groups
 
@@ -720,13 +720,13 @@ In this exercise, you used multiple methods to deploy a container image to an Az
 
 1.  In the **Cloud Shell** command prompt at the bottom of the portal, type in the following command and press Enter to list all resource groups in the subscription:
 
-    ```
+    ```bash
     az group list
     ```
 
 1.  Type the following command and press Enter to view a list of possible commands to delete a resource group:
 
-    ```
+    ```bash
     az group delete --help
     ```
 
@@ -734,7 +734,7 @@ In this exercise, you used multiple methods to deploy a container image to an Az
 
 1.  Type the following command and press Enter to delete the **ContainerCompute** resource group:
 
-    ```
+    ```bash
     az group delete --name ContainerCompute --no-wait --yes
     ```
 
